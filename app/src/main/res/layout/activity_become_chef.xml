@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editSpecialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Uzmanlık alanınız (örneğin: Osmanlı Mutfağı)"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kendinizi tanıtın (örneğin: 10 yıllık deneyim...)"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Fiyat (örneğin: 200 ₺)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnSaveChef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef Profili Oluştur"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyCHEF</string>
+    <string name="open">Menüyü Aç</string>
+    <string name="close">Menüyü Kapat</string>
+</resources>

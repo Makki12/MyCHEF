@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayoutChef"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TOOLBAR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarChef"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/myChefLogo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mychef_logo" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Onaylanmış Randevular -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Onaylanmış Randevular"
+            android:padding="8dp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:id="@+id/scrollConfirmedAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#EEEEEE">
+
+            <LinearLayout
+                android:id="@+id/confirmedContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"/>
+        </ScrollView>
+
+        <!-- Onay Bekleyen Randevular -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Onay Bekleyen Randevular"
+            android:padding="8dp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:id="@+id/scrollPendingAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#EEEEEE">
+
+            <LinearLayout
+                android:id="@+id/pendingContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"/>
+        </ScrollView>
+
+        <!-- Profil Görüntüle Butonu -->
+        <Button
+            android:id="@+id/btnViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 Profilimi Görüntüle"
+            android:layout_margin="12dp"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationViewChef"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

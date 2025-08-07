@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "574461170621",
+    "firebase_url": "https://mychef-d5aa1-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mychef-d5aa1",
+    "storage_bucket": "mychef-d5aa1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574461170621:android:4ef235c54c490ee924f8d4",
+        "android_client_info": {
+          "package_name": "com.example.mychef"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2DMpbLqOKpN4Xb5BgHiHkRUwAiu9EEKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

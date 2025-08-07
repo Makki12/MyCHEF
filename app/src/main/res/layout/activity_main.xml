@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mychef_logo"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter" />
+
+        <!-- TARİF YOLCUSU başlığı -->
+        <TextView
+            android:id="@+id/textTitleYolcu"
+            android:text="TARİF YOLCUSU"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Tarif Yolcusu Resmi -->
+        <ImageView
+            android:id="@+id/imageYolcu"
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tarifyolcusu_main" />
+
+        <!-- MYCHEF başlığı -->
+        <TextView
+            android:id="@+id/textTitleChef"
+            android:text="MYCHEF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Şef Resmi -->
+        <ImageView
+            android:id="@+id/imageChef"
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chef_main" />
+
+    </LinearLayout>
+</ScrollView>

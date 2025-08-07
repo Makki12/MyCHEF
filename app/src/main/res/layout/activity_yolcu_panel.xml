@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TOOLBAR + LOGO -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarYolcu"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/myChefLogo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mychef_logo" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Filtreleme butonu -->
+        <Button
+            android:id="@+id/buttonFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrele"
+            android:layout_gravity="end"
+            android:layout_margin="8dp" />
+
+        <!-- Şefler listesi + Sonraki -->
+        <ScrollView
+            android:id="@+id/scrollChefs"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:id="@+id/chefContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:padding="8dp"
+                    android:text="Şef Örneği" />
+
+                <Button
+                    android:id="@+id/buttonNextPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sonraki"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Alt 3 resim -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="4dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Evdeki Malzemeler"
+                android:src="@drawable/malzemeler" />
+
+            <ImageView
+                android:id="@+id/imageAI"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="4dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Yapay Zeka"
+                android:src="@drawable/yapayzeka" />
+
+            <ImageView
+                android:id="@+id/imageTools"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="4dp"
+                android:contentDescription="Evdeki Araçlar"
+                android:scaleType="centerCrop"
+                android:src="@drawable/araclar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- navigation menüsü -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

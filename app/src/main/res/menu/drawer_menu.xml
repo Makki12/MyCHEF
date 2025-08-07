@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="👤 Profil"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="🏠 Ana Sayfa"
+        android:icon="@android:drawable/ic_menu_view" />
+
+    <item
+        android:id="@+id/menu_ingredients"
+        android:title="🍅 Elimdeki Malzemeler"
+        android:icon="@android:drawable/ic_menu_agenda" />
+
+    <item
+        android:id="@+id/menu_tools"
+        android:title="🔧 Araç Gereçler"
+        android:icon="@android:drawable/ic_menu_manage" />
+
+    <item
+        android:id="@+id/menu_solutions"
+        android:title="💡 Pratik Çözümler"
+        android:icon="@android:drawable/ic_menu_info_details" />
+
+    <item
+        android:id="@+id/menu_live"
+        android:title="🎥 MyChef Canlı Bağlantı"
+        android:icon="@android:drawable/ic_menu_call" />
+
+    <item
+        android:id="@+id/menu_support"
+        android:title="❓ Yardım Masası"
+        android:icon="@android:drawable/ic_menu_help" />
+
+</menu>
